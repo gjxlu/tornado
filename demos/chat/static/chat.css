@@ -15,15 +15,15 @@
  */
 
 body {
-  background: white;
-  margin: 10px;
+	background: #CCC;
+    margin: 10px;
 }
 
 body,
 input {
   font-family: sans-serif;
-  font-size: 10pt;
-  color: black;
+  font-size: 15pt;
+  color :#333;
 }
 
 table {
@@ -51,6 +51,18 @@ td {
 }
 
 #nav {
-  float: right;
-  z-index: 99;
+	height:100 px; 
+    float: inherit;
+    margin:0;
+    padding:0;
+    outline:0;
+    font-size:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    vertical-align:baseline;
+	background-color: #003;
+}
+.header {
+	position: relative;
+	z-index:1;
+	background-color:#5FB336;
 }
