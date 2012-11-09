@@ -13,6 +13,10 @@
 // under the License.
 
 $(document).ready(function() {
+	var a=document.getElementById('date');
+	var b=(new Date()).toString();
+	a.innerText=b;
+	
     if (!window.console) window.console = {};
     if (!window.console.log) window.console.log = function() {};
 
