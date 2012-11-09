@@ -130,6 +130,8 @@ var updater = {
         var node = $(message.html);
         node.hide();
         $("#inbox").append(node);
-        node.slideDown();
+        node.slideDown(function() {
+			$("#inbox").scrollTop($("#inbox").height());
+		});
     }
 };

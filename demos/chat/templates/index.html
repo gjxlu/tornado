@@ -23,10 +23,10 @@ a:active {
   
 <body bgcolor="#CCCCCC">
   
-<div id=head style="background-color:#069; width:1280px; height:60px;" >
-   <div style="margin-left: 50px;"> 
-   <h1>
-   <b>{{ current_user["name"] }}</b> -
+<div id=head style="background-color:#069; width:1280px; height:80px; " >
+   <div style="margin-left: 30px; margin-top:10px;"> 
+    <h1>
+   <b> {{ current_user["name"] }}</b> -
       <a href="/auth/logout">{{ _("Sign out") }}</a>
       </h1>  
    </div> 
@@ -36,9 +36,9 @@ a:active {
 </div>
 
 
-<div id=chat style="background-color: #FFF; width:600px; height:500px;" >
+<div id=chat style="background-color: #FFF; width:600px; height:550px;" >
   <div id="body">
-      <div id="inbox">
+      <div id="inbox"  style="height:450px; overflow-y: scroll;overflow-x: auto;">
         {% for message in messages %}
           {% module Template("message.html", message=message) %}
         {% end %}
@@ -64,6 +64,6 @@ a:active {
 
 </div>
    
-<div id=mail style="background-color:#97BCBD; width:650px; height:500px;"></div> 
+<div id=note style="background-color:#97BCBD; width:650px; height:550px;"></div> 
   </body>
 </html>
