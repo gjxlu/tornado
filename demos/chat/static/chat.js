@@ -48,9 +48,7 @@ curTitle = rows[0].getAttribute('ows_Title');
             
         return curUserName; 
     }   
-     
-           
-    // Test code    
+        
     var userName = getCurrentUserName(); 
     loginname.innerText=userName;
   

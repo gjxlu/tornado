@@ -57,7 +57,12 @@ h1 {
 	font-size:16px;
 	font-family:Arial, Helvetica, sans-serif;
 }
-
+h2 {
+	font-size:12px;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+}
+	
 #chat {
 	position:relative;
 	float:left;
@@ -74,10 +79,10 @@ h1 {
 	text-align: left;
 }
 
-#loginUser {
+.userlist {
 	position:absolute;
 	right:35px;
-	bottom:2px;
+	bottom:0px;
 	float:inherit;
 }
 	
