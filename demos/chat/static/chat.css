@@ -72,3 +72,12 @@ h1 {
 	margin-top:15px;
 	margin-left:25px;
 	text-align: left;
+}
+
+#loginUser {
+	position:absolute;
+	right:35px;
+	bottom:2px;
+	float:inherit;
+}
+	
