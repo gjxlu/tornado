@@ -16,43 +16,8 @@ $(document).ready(function() {
 	var a=document.getElementById('date');
 	var b=(new Date()).toString();
 	a.innerText=b;
-	
-var loginname=document.getElementById(loginUser);
-   var curTitle = null;
-    function getCurrentUserName()    
-    {    
-        var curUserName = null; 
 
-        var lists = new SPAPI_Lists('')    
-        var items = lists.getListItems(    
-            'User Information List',    
-            '',    
-            '<Query><Where><Eq><FieldRef Name="ID"/><Value Type="Counter">' + _spUserId + '</Value></Eq></Where></Query>', // query    
-            '<ViewFields><FieldRef Name="Name"/></ViewFields>',    
-            1, // rowLimit    
-            '' // queryOptions    
-        );    
-       
-        if (items.status == 200)    
-        {    
-
-            var rows = items.responseXML.getElementsByTagName('z:row');    
-       
-            if (rows.length == 1)                   
-                curUserName = rows[0].getAttribute('ows_Name');    
-curTitle = rows[0].getAttribute('ows_Title');   
-
-
-                      
-        } 
-            
-        return curUserName; 
-    }   
-        
-    var userName = getCurrentUserName(); 
-    loginname.innerText=userName;
-  
-	
+ 	
     if (!window.console) window.console = {};
     if (!window.console.log) window.console.log = function() {};
 
